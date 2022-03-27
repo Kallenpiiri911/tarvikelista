@@ -98,3 +98,8 @@ main {
 #keltainen li {
     color: yellow;
 }
+
+#vasenviiva {
+    border-left: 7px solid grey;
+    list-style-type: none;
+}
