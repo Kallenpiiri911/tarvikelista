@@ -6,9 +6,116 @@
     <meta charset="UTF-8"/>
 </head>
 <body>
+
+    <header>
+        <nav id="navigointi">
+          <ul>
+            <li aria-current="page"><a href="index.html">Tarvikelista</a></li>
+          </ul>
+        </nav>
+      </header>
+
 <main>
 
-<p>Moi</p>
+    <h1>Tarvikelista</h1>
+
+<p style="color:red;">Punainen: Ei tarvitse</p>
+<p style="color:yellow">Keltainen: Ehkä tarvitsee</p>
+<p style="color:green;">Vihreä: Tarvitsee</p>
+
+
+<p>Valitse oletettava sää</p>
+  <input onclick="annaLista()" type="radio" id="vettaSataa" name="saa" value="vettaSataa">
+  <label for="sataa">Vettä sataa</label><br>
+  <input onclick="annaLista()" type="radio" id="normaaliKeli" name="saa" value="vettaSataa">
+  <label for="normaaliKeli">Normaali keli</label><br>
+
+<p>Monta yötä aiot viipyä?</p>
+  <input onclick="annaLista()" type="radio" id="nollaYo" name="yo" value="nollaYo">
+  <label for="nollaYo">0 Yötä</label><br>
+  <input onclick="annaLista()" type="radio" id="yksiYo" name="yo" value="yksiYo">
+  <label for="yksiYo">1-3 Yötä</label><br>
+
+<p>Pystytkö nukkumaan valmiissa laavussa?</p>
+  <input onclick="annaLista()" type="radio" id="eiLaavua" name="laavu" value="eiLaavua">
+  <label for="eiLaavua">En</label><br>
+  <input onclick="annaLista()" type="radio" id="kyllaLaavu" name="laavu" value="kyllaLaavu">
+  <label for="kyllaLaavu">Kyllä</label>
+  <input onclick="annaLista()" type="radio" id="ehkaLaavu" name="laavu" value="ehkaLaavu">
+  <label for="ehkaLaavu">Ehkä</label><br>
+
+<p>Onko kohteella nuotiopaikka yms?</p>
+  <input onclick="annaLista()" type="radio" id="eiNuotio" name="nuotio" value="eiNuotio">
+  <label for="eiNuotio">Ei</label><br>
+  <input onclick="annaLista()" type="radio" id="kyllaNuotio" name="nuotio" value="kyllaNuotio">
+  <label for="kyllaNuotio">Kyllä</label>
+
+<section id="keltainen">
+<h1>Tarvikkeet</h1>
+<p>Leiri</p>
+<ul>
+<li id="teltta">Teltta</li>
+<li id="rinkanSadesuoja">Rinkan Sadesuoja</li>
+<li id="makuuPussi">Makuupussi</li>
+<li id="makuuAlusta">Makuu-alusta</li>
+<li id="istuinAlusta">Istuinalusta</li>
+<li id="kirves">Kirves</li>
+<li id="puukko">Puukko</li>
+<li id="vara-akku">Vara-akku puhelimeen</li>
+<li id="taskuLamppu">Taskulamppu / muut valot</li>
+</ul>
+
+<p>Ensiapu</p>
+
+<ul>
+<li id="desinfiointi">Desinfiointiaine</li>
+<li id="laastari">Laastarit / Rakkolaastarit</li>
+<li id="side">Side</li>
+<li id="sarkuLaake">Särkylääke</li>
+<li id="hammasTahna">Hammastahna / harja</li>
+<li id="hyonteisMyrkky">Hyönteismyrkky</li>
+<li id="bebanthen">Bebanthen</li>
+</ul>
+
+<p>Ruoka</p>
+
+<ul>
+<li id="trangia">Trangia</li>
+<li id="sinol">Sinol / Marinol</li>
+<li id="retkiRuoka">Retkiruokaa</li>
+<li id="vesi">Vettä</li>
+<li id="tuliTikku">Tulitikut</li>
+<li id="sytyke">Sytyke</li>
+<li id="tulukset">Tulukset</li>
+<li id="aterimet">Haarukka / Veitsi</li>
+<li id="ruokaAstia">Ruoka-astia ja muki</li>
+<li id="laakkeet">Lääkkeet</li>
+</ul>
+
+<p>Vaatteet</p>
+
+<ul>
+  <li id="sukat">Sukat (3)</li>
+  <li id="boxerit">Boxerit</li>
+  <li id="tPaita">T-paita</li>
+  <li id="pyyhe">Pyyhe</li>
+  <li id="silikooni">Silikoonisäkit kengille</li>
+  <li id="kenganNauha">Kengännauhat</li>
+  <li id="sadeVaatteet">Sade vaatteet</li>
+  <li id="toppaVaatteet">Toppa vaatteet</li>
+</ul>
+
+<p>Muuta</p>
+
+<ul>
+  <li id="kartta">Kartta / kompassi</li>
+  <li id="namit">Namit</li>
+  <li id="olut">Olut</li>
+  <li id="pelikortit">Pelikortit</li>
+  <li id="heijastin">Heijastinliivi</li>
+</ul>
+
+</section>
 
 <script src="script.js"></script>
 </main>

@@ -12,7 +12,9 @@ body {
     overflow-y: scroll;
 }
 
-
+h1 {
+    text-align: center;
+}
 
 /*Parantaa näkyvyyttyä iPhoneilla*/
 html {
@@ -92,3 +94,7 @@ main {
   color:white;
 }
 /* Navigointipalkin määrittely loppuu */
+
+#keltainen li {
+    color: yellow;
+}
