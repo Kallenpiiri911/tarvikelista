@@ -1,15 +1,15 @@
-let vettaSataa = document.getElementById("vettaSataa");
-let normaaliKeli = document.getElementById("normaaliKeli");
+const vettaSataa = document.getElementById("vettaSataa");
+const normaaliKeli = document.getElementById("normaaliKeli");
 
-let nollaYo = document.getElementById("nollaYo");
-let yksiYo = document.getElementById("yksiYo");
+const nollaYo = document.getElementById("nollaYo");
+const yksiYo = document.getElementById("yksiYo");
 
-let eiLaavua = document.getElementById("eiLaavua");
-let kyllaLaavu = document.getElementById("kyllaLaavu");
-let ehkaLaavu = document.getElementById("ehkaLaavu");
+const eiLaavua = document.getElementById("eiLaavua");
+const kyllaLaavu = document.getElementById("kyllaLaavu");
+const ehkaLaavu = document.getElementById("ehkaLaavu");
 
-let eiNuotio = document.getElementById("eiNuotio");
-let kyllaNuotio = document.getElementById("kyllaNuotio");
+const eiNuotio = document.getElementById("eiNuotio");
+const kyllaNuotio = document.getElementById("kyllaNuotio");
 
 function annaLista() {
   if (vettaSataa.checked) {
