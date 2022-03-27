@@ -1,0 +1,94 @@
+/* Perus pohja ja ulkönäkö määrittely*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    font-family: Roboto, sans-serif;
+    background-color: #252627;
+    color: #a9a9b3;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+
+
+/*Parantaa näkyvyyttyä iPhoneilla*/
+html {
+    height: -webkit-fill-available;
+}
+
+
+/*Sivuston järjestys*/
+main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    max-width: 832px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+#ajan-kohtaista {
+  text-align:left;
+  font-weight: bold;
+  border-left:3px solid grey;
+  padding:10px;
+  margin:5px;
+  list-style-type:none;
+}
+
+/*Määrittää navigointipalkin ulkonäön*/
+#navigointi ul {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    overflow-x: auto;
+    padding: 0;
+    background-color: #252627;
+}
+
+#navigointi {
+    white-space: nowrap;
+}
+
+#navigointi ul li {
+    list-style-type: none;
+    display: flex;
+}
+
+#navigointi ul li a {
+    display: flex;
+    text-decoration: none;
+    padding: 1em;
+    align-items: center;
+    font-size:100%;
+    color:grey;
+    letter-spacing: 0.6px;
+    text-shadow: 0.3px 0.3px;
+    font-weight: 400;
+}
+
+
+#navigointi ul li a:visited {
+    color: grey;
+}
+
+#navigointi ul li[aria-current] {
+  font-size:110%;
+  color:white;
+  background-color:#252627;
+}
+
+#navigointi ul li[aria-current] a {
+    color: white;
+    font-size:110%; 
+}
+#navigointi ul li a:hover {
+  font-size:110%;
+  color:white;
+}
+/* Navigointipalkin määrittely loppuu */
